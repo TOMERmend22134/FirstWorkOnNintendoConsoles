@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Boy</title>
+    <link rel="stylesheet" href="./styles/desktop.css">
+    <style>
+        /* Frame 5 */
+
+
+/* Auto layout */
+
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+header, nav, footer {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 8px 80px;
+gap: 121px;
+
+position: absolute;
+height: 80px;
+left: 0px;
+right: 0px;
+top: 0px;
+
+background: #FFFFFF;
+}
+
+/* Frame 6 */
+
+
+/* Auto layout */
+section {
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+padding: 0px;
+gap: 32px;
+
+position: absolute;
+height: 262px;
+left: 297px;
+right: 297px;
+top: 168px;
+}
+
+@font-face {
+		font-family: "rubik";
+		src: url(/fonts/./Rubik-Bold.ttf);
+	}
+
+section>h1 {
+    font-family: 'rubik';
+    src: url(/fonts/) format("truetype");
+    font-size: 85px;
+}
+@font-face {
+		font-family: "nunito";
+		src: url(/fonts/Nunito-SemiBold.ttf);
+	}
+
+
+section>p {
+    font-family: 'nunito';
+    src: url(/fonts/) format("truetype");
+    font-size: 40px;
+    color: gray;
+}
+
+section>div {
+    font-family: "rubik";
+		src: url(/fonts/./Rubik-Bold.ttf);
+}
+
+.switch-paragraph {
+    font-family: 'nunito';
+    src: url(/fonts/) format("truetype");
+    color: gray;
+    text-align: center;
+    font-size: 35px;
+    position: absolute;
+    margin-top: -120px;
+    margin-left: -155px;
+}
+
+.switch-h1{
+    font-family: 'rubik';
+    src: url(/fonts/) format("truetype");
+    font-size: 120px;
+    text-align: center;
+    height: 180px;
+}
+/* Nintendo */
+
+#logofix {
+    height: 45px;
+    border-radius: 30px;
+}
+
+section>img {
+position: absolute;
+height: 777px;
+left: 22%;
+right: 188px;
+top: 285px;
+}
+
+a.profile.movescale::after {
+    top: 90px;
+}
+
+
+/* Group 1 */
+
+
+/* Frame 21 */
+
+/* Auto layout */
+
+aside {
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 32px;
+
+position: absolute;
+width: 100%;
+height: 572px;
+left: 500px;
+top: 3100px;
+}
+
+
+
+/* Nintendo */
+
+aside>img {
+position: absolute;
+height: 417px;
+left: 770px;
+right: -707px;
+top: 14px;
+max-width: 100%;
+}
+
+img.gameboyhalf {
+    left: 905px;
+}
+
+#upbutton {
+    background: url('https://api.iconify.design/material-symbols/arrow-circle-up-outline.svg') no-repeat center;
+    content: url('https://api.iconify.design/material-symbols/arrow-circle-up-outline.svg');
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-size: 60px;
+    position: relative;
+    right: 410px;
+}
+
+/* Rectangle 2 */
+
+main {
+position: absolute;
+width: 1280px;
+height: 398px;
+left: 80px;
+top: 1130px;
+
+
+
+/* Frame 11 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 1279px;
+height: 398px;
+left: 80px;
+top: 1544px;
+
+
+
+/* Group 2 */
+
+
+position: absolute;
+width: 1280px;
+height: 380px;
+left: 80px;
+top: 2038px;
+
+
+
+/* Frame 15 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 1279px;
+height: 448px;
+left: 80px;
+top: 2466px;
+position: absolute;
+width: 1525px;
+height: 286px;
+left: 12%;
+top: 1230px;
+
+background: linear-gradient(93.62deg, #000000 23.88%, #8fee4c 70.45%);
+border-radius: 40px;
+}
+
+footer.flex.v-center{
+    width: 100%;
+    top: 3620px;
+    height: 172px;
+}
+
+.modes {
+    font-size: 30px;
+    color: #FFFFFF;
+    align-self: center;
+    
+}
+
+.describe {
+    font-size: 25px;
+    color: #FFFFFF;
+    align-self: end;
+}
+
+#gameboy-hand {
+    position: relative;
+    object-fit: cover;
+    bottom: 112px;
+}
+
+.three-heroes {
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 1279px;
+height: 398px;
+left: 80px;
+top: 444px;
+}
+
+.tv-mode {
+    font-size: 35px;
+    text-align: left;
+}
+
+.dock {
+    font-size: 24px;
+    color: #878787;
+    text-align: left;
+}
+
+.testtt {
+position: absolute;
+width: 1280px;
+height: 398px;
+left: 80px;
+top: 1130px;
+
+
+/* Frame 11 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 1279px;
+height: 398px;
+left: 80px;
+top: 1544px;
+
+
+
+/* Group 2 */
+
+
+position: absolute;
+width: 1280px;
+height: 380px;
+left: 80px;
+top: 2038px;
+
+
+
+/* Frame 15 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 1279px;
+height: 448px;
+left: 80px;
+top: 2466px;
+position: absolute;
+width: 1525px;
+height: 286px;
+left: -5%;
+top: 500px;
+
+/* 
+position: absolute;
+width: 1280px;
+height: 286px;
+left: 80px;
+top: 2132px; */
+
+background: linear-gradient(92.8deg, #000000 5.88%, #246EC6 76.24%);
+border-radius: 40px;
+
+}
+
+img#switch-hand2 {
+    object-fit: contain;
+    position: relative;
+    top: -301px;
+    right: -30px;
+}
+
+p.switch-paragraph.describe {
+    position: absolute;
+    margin-left: 50px;
+    margin-top: -115px;
+    font-size: 30px;
+}
+
+div.three-heroes.heightfix {
+    top: 855px;
+    left: 0px;
+}
+
+
+/* Frame 24 */
+
+
+/* Auto layout */
+
+footer {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 32px 80px;
+gap: 290px;
+
+position: absolute;
+width: 100%;
+height: 107px;
+left: 0px;
+top: 3772px;
+
+background: #FFFFFF;
+
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper flex flex-col">
+    <header class="flex v-center">
+        <a id="logofix" data-attr="Home" href="./index.html">
+            <img class="item item5" src="./images/logo.webp" alt="" width="Auto" height="45px">
+        </a>
+        <div class="consolegap">
+        <a data-attr="Nintendo Switch" href="./switch.html" class="item item5 fixsizeheight">
+            <img class="item item5 nintendoswitchfix" src="./images/switchlogo.gif" alt="" width="45px" height="45px">
+        </a>
+        <a data-attr="DS" href="./ds.html" class="item item5 fixsizeheight">
+            <img class="item item5 nintendodsfix" src="./images/dslogo.png" alt="" width="45px" height="45px">
+        </a>
+        <a data-attr="Steam Deck" href="./steamdeck.html" class="item item5 fixsizeheight">
+            <img class="item item5 steamdeckfix" src="./images/decklogo.png" alt="" width="45px" height="45px">
+        </a>
+    </div>
+    <a data-attr="Important Personalities &#xa; And Historical Events" href="./importantpersonalities.html" class="profile movescale">
+        <img class="profile shigeru" src="./images/shigerumiyamoto.jpg" alt="" width="45px" height="45px">
+    </a>
+    <div class="flex tight">
+    <div class="time">
+        <span id="time"></span>
+    </div>
+    <div class="wifi">
+            <img src="./images/wifi.svg" width="30px"
+                height="30px" />
+        </div>
+        <div class="battery">
+            <img src="./images/battery.png" width="45px" height="45px" />
+        </div>
+        <script src="time.js"></script>
+        </div>
+    </header>
+    <section>
+        <div class="centering">
+        <h1 class="switch-h1">Nintendo Game Boy</h1>
+        <p class="switch-paragraph">The Game Boy is an handheld game console developed by Nintendo. It was first released in Japan on April 21, 1989. Nintendo Game Boy is home to many famous games, such as Pokémon Red and Blue, Tetris, Pokémon Gold and more.
+        </p>
+        </div>
+        <img src="./images/gameboy.png" alt="">
+    </section>
+    <main>
+        <div>
+        <img id="gameboy-hand" src="./images/gameboyhand.png" width="522px" height="398px" alt="">
+    </div>
+    <div>
+        <h1 class="switch-h1 modes">There are 3 models</h1>
+        <p class="switch-paragraph describe">There are 3 different models of the Game Boy: <br>Game Boy, Game Boy Color and Game Boy Advance.
+        </p>
+    </div>
+        <div class="three-heroes">
+            <div>
+            <img src="./images/gameboy169.webp" width="413px" height="240px" alt="" style="border-radius: 20px;">
+            <h1 class="switch-h1 tv-mode">Game Boy</h1>
+            <p class="switch-paragraph dock">The Game Boy is a 8-bit handheld game console developed by Nintendo. It was first released in Japan on April 21, 1989.</p>
+        </div>
+        <div class="imagesizefix">
+            <img src="./images/gbcolor169.jpg" width="413px" height="240px" alt="" style="border-radius: 20px;">
+            <h1 class="switch-h1 tv-mode">Game Boy Color</h1>
+            <p class="switch-paragraph dock">The Game Boy Color is a handheld game console which was released in Japan on October 21, 1998. It is the successor to the Game Boy.</p>
+        </div>
+        <div>
+            <img src="./images/gba169.webp" width="413px" height="240px" alt="" style="border-radius: 20px;">
+            <h1 class="switch-h1 tv-mode">Game Boy Advance</h1>
+            <p class="switch-paragraph dock gameboybottom">The Game Boy Advance is a handheld game console that was released in Japan on March 21, 2001. It is the successor to the Game Boy Color.</p>
+        </div>
+        <div class="testtt">
+        <div>
+            <img id="switch-hand2" src="./images/gbacartridge.png" width="450px" height="890px" alt="">
+        </div>
+        <div class="centering">
+            <h1 class="switch-h1 modes">Best Game Boy Games</h1>
+            <p class="switch-paragraph describe unique gameboy-p-height">These are the most-selling games to all models <br> of the Game Boy.
+            </p>
+        </div>
+    </div>
+    <div class="three-heroes heightfix">
+        <div>
+        <img src="./images/pokemongold.jpg" width="413px" height="240px" alt="" style="border-radius: 20px;">
+        <h1 class="switch-h1 tv-mode">Pokémon Gold Version</h1>
+        <p class="switch-paragraph dock">Pokémon Gold Version is 1999 role-playing video games developed by Game Freak and published by Nintendo for the Game Boy Color.</p>
+    </div>
+    <div>
+        <img src="./images/buusfury.png" width="413px" height="240px" alt="" style="border-radius: 20px;">
+        <h1 class="switch-h1 tv-mode">Dragon Ball Z: Buu's Fury</h1>
+        <p class="switch-paragraph dock"><br>Dragon Ball Z: Buu's Fury is an action RPG released in America on September 14, 2004, for the Game Boy Advance.</p>
+    </div>
+    <div>
+        <img src="./images/pokemonemerald.jpg" width="413px" height="240px" alt="" style="border-radius: 20px;">
+        <h1 class="switch-h1 tv-mode">Pokémon Emerald Version</h1>
+        <p class="switch-paragraph dock"><br>Pokémon Emerald Version is a 2004 role-playing video game developed by Game Freak, published by The Pokémon Company and Nintendo for the Game Boy Advance.</p>
+    </div>
+        
+
+        </div>
+
+    </main>
+    <aside>
+        <iframe class="fixwidthvideo" height="75%" src="https://www.youtube.com/embed/qzAo9HzOgtQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <img class="gameboyhalf" src="./images/gba-aside.png" alt="">
+        <button id="upbutton">
+            <!-- <i class="icons">arrow-up</i> -->
+    </button>
+    <script>
+        const upbutton = document.querySelector("#upbutton");
+
+        upbutton.addEventListener("click", function () {
+
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth"
+            });
+        }); 
+    </script>
+    </aside>
+            <footer class="flex v-center">
+                <div class="flex tight spacing-footer">
+                <a class="logofix heightfixfooter" data-attr="Home" href="./index.html">
+                    <img class="item item5" src="./images/logo.webp" alt="" width="Auto" height="45px">
+                </a>
+                <a data-attr="About Ido" href="./ido.html" class="profile">
+                    <img class="profile" src="./images/ido.jpg" alt="" width="45px" height="45px">
+                </a>
+                <a data-attr="About Tomer" href="./tomer.html" class="profile">
+                    <img class="profile" src="./images/tomer.jpg" alt="" width="45px" height="45px">
+                </a>
+            </div>
+            <div class="copyright">
+                    <p>By Ido Simantov and Tomer Mendelovich | All rights reserved 2023 &copy;</p>
+            </div>
+            <div class="contactus">
+                <a class="hrefcolorfix" data-attr="Contact Us" href="./contactus.html">
+                <p>Contact Us</p>
+            </a>
+            </div>
+    </footer>
+    </div>
+    
+</body>
+</html>

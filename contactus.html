@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+	<link rel="stylesheet" href="./styles/desktop.css">
+	<style>
+			@font-face {
+		font-family: "nintendo";
+		src: url(/fonts/AOTFShinGoProMedium.woff);
+	}
+	body{
+		background-image: url(./images/generic-background-for-contactus.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		max-width: 100%;
+    	overflow-x: hidden;
+		overflow-y: hidden;
+		height: 100%;
+	}
+	html {
+		font-family: 'nintendo';
+		src: url(/fonts/) format("opentype");
+		color: var(--static);
+		user-select: none;
+	}
+
+	h1.switch-h1 {
+	color: white;
+	font-size: 64px;
+    padding-inline-start: 20px;
+	}
+
+	#logofix {
+    height: 45px;
+    border-radius: 30px;
+	left: 70px;
+}
+	.enterdetails{
+		color: rgb(0, 247, 255);
+	}
+	#text {
+		color: #00ffe7;
+	}
+	fieldset {
+	display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+	border-width: 0px;
+    border-style: groove;
+    border-color: rgb(0, 0, 0);
+    border-image: initial;
+	font-size: 30px;
+	color: #7aff00;
+	}
+	select{
+		font-family: 'nintendo';
+		height: 30px;
+		position: relative;
+		top: -3px;
+		right: 21px;
+		border-radius: 5px;
+	}
+	input{
+		font-family: 'nintendo';
+		src: url(/fonts/) format("opentype");
+		color: var(--static);
+		user-select: none;
+		font-size: 23px;
+		border-radius: 8px;
+	}
+	input.textboxfix {
+		position: relative;
+		top: -5px;
+		right: 4px;
+		color: black;
+	}
+	input.textboxfix:focus {
+		background-color: #7aff00;
+	}
+	input.genderselection {
+		position: relative;
+		right: 0px;
+	}
+	input.submit {
+		font-family: 'nintendo';
+		src: url(/fonts/) format("opentype");
+		color: var(--static);
+		user-select: none;
+		font-size: 23px;
+		border-radius: 8px;
+		color: black;
+	}
+	footer {
+		position: absolute;
+		bottom: 0px;
+		background: #FFFFFF;
+		height: 180px;
+		width: 110%;
+		left: -25px;
+	}
+	a.profile.movescale {
+		top: -7px;
+		left: -164px;
+	}
+	div.consolegap {
+		margin-left: 161px;
+	}
+	a.profile.movescale {
+			bottom: 2px;
+			left: -295px;
+			width: 60px;
+			position: absolute;
+	}
+	a.profile.movescale::after {
+		left: 10px;
+	}
+	a.profile.idotomercenter {
+		position: absolute;
+		bottom: -47px;
+		right: 300px;
+	}
+	a.profile.idotomercenter.idocenter {
+		right: 400px;
+	}
+	a.profile.movescale::after {
+    top: 90px;
+}
+	div.copyright {
+		bottom: 900px;
+	}
+	div.ido-tomer-shigeru {
+		width: 100%;
+		position: relative;
+		right: -228px;
+	}
+	</style>
+	<body>
+		<div class="centering">
+			<h1 class="switch-h1">Contact Us</h1>
+		</div>
+		<form method="get" action="">
+			<fieldset>
+				<legend class="enterdetails">Enter your details:</legend>
+				First Name: <input class="textboxfix" type="text" name="firstName" /><br/> 
+				Last Name: <input class="textboxfix" type="text" name="lastName" /><br/>
+				Subject: &nbsp
+				<select name="subject">
+					<option value="misleading-information" selected="true">Misleading Information</option>
+					<option value="corrupted-image">Corrputed Image</option>
+					<option value="corrupted-link">Corrputed Link</option>
+					<option value="Other">Other</option>
+				</select><br/>
+				Gender:
+				<input class="genderselection" type="radio" name="gender" value="male"> Male &nbsp
+				<input class="genderselection" type="radio" name="gender" value="female"> Female<br/>
+				<input class="submit" type="submit" value="Send"  >
+				<footer>
+						<div class="wrapper flex flex-col">
+					<header class="flex v-center">
+						<a id="logofix" data-attr="Home" href="./index.html">
+							<img class="item item5" src="./images/logo.webp" alt="" width="Auto" height="45px">
+						</a>
+						<div class="consolegap">
+							<a data-attr="GameBoy" href="./gameboy.html" class="item item5 fixsizeheight gameboygap">
+								<img class="item item5 gameboyfix" src="./images/gameboylogo.png" alt="" width="45px" height="45px">
+							</a>
+							<a data-attr="DS" href="./ds.html" class="item item5 fixsizeheight">
+								<img class="item item5 nintendodsfix" src="./images/dslogo.png" alt="" width="45px" height="45px">
+							</a>
+							<a data-attr="Nintendo Switch" href="./switch.html" class="item item5 fixsizeheight switchgap">
+								<img class="item item5 nintendoswitchfix" src="./images/switchlogo.gif" alt="" width="45px" height="45px">
+							</a>
+							<a data-attr="Steam Deck" href="./steamdeck.html" class="item item5 fixsizeheight steamdeckgap">
+								<img class="item item5 steamdeckfix" src="./images/decklogo.png" alt="" width="45px" height="45px">
+							</a>
+							<div class="ido-tomer-shigeru">
+							<a data-attr="Important Personalities &#xa; And Historical Events" href="./importantpersonalities.html" class="profile movescale">
+								<img class="profile shigeru" src="./images/shigerumiyamoto.jpg" alt="" width="45px" height="45px">
+							</a>
+							<div class="flex tight spacing-footer">
+							<a data-attr="About Ido" href="./ido.html" class="profile idotomercenter idocenter">
+								<img class="profile" src="./images/ido.jpg" alt="" width="45px" height="45px">
+							</a>
+							<a data-attr="About Tomer" href="./tomer.html" class="profile idotomercenter">
+								<img class="profile" src="./images/tomer.jpg" alt="" width="45px" height="45px">
+							</a>
+							</div>
+						</div>
+						</div>
+						</header>
+					</footer>
+				</div>
+			</fieldset>
+		</form>
+
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,93 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="./styles/desktop.css">
+</head>
+
+<style>
+		a {
+		position: relative;
+		--focus-light: #3FE9D3;
+		--focus-dark: #ffffff;
+	}
+	a.straightlogo.logofix.heightfixfooter {
+		left: 50px;
+	}
+	a.profile {
+		left: 300px;
+	}
+	a.profile.fontfix.idogap {
+		left: 500px;
+	}
+	div.games.flex {
+		top: 113px;
+	}
+	a.item.item5.historical::after {
+		top: 290px;
+	}
+</style>
+
+<body class="index">
+
+	<div class="wrapper flex flex-col">
+		<header class="flex v-center">
+			<a class="straightlogo logofix heightfixfooter" data-attr="Home" href="./index.html">
+				<img class="item item5" src="./images/logo.webp" alt="" width="Auto" height="45px">
+			</a>
+			<a data-attr="About Ido" href="./ido.html" class="profile fontfix idogap">
+				<img class="profile" src="./images/ido.jpg" alt="" width="45px" height="45px">
+			</a>
+			<a data-attr=" About       Tomer" href="./tomer.html" class="profile fontfix tomercolor">
+				<img class="profile" src="./images/tomer.jpg" alt="" width="45px" height="45px">
+			</a>
+			<div class="time">
+				<span id="time"></span>
+			</div>
+			<div class="wifi">
+				<img src="./images/wifi.svg" width="30px"
+					height="30px" />
+			</div>
+			<div class="battery">
+				<img src="./images/battery.png" width="45px" height="45px" />
+			</div>
+			<script src="time.js"></script>
+		</header>
+		<main>
+			<div class="games flex">
+				<a data-attr="GameBoy" href="./gameboy.html" class="item item1"><img class="b-radius gameboyb-radius"
+						src="./images/gameboy.png" height="249px" width="249px"/></a>
+				<a data-attr="DS" href="./ds.html" class="item item2"><img class="ds-sizefix b-radius dsb-radius leftds"
+						src="./images/exampledsbg.png" height="249px" width="249px" /></a>
+				<a data-attr="Nintendo Switch" href="./switch.html" class="item item3"><img class="b-radius switchb-radius"
+						src="./images/nintendoswitch.png" height="249px" width="249px" /></a>
+				<a data-attr="Steam Deck" href="./steamdeck.html" class="item item4"><img class="b-radius steamdeckb-radius" src="./images/steamdeck.png" alt="" height="249px" width="249px"></a>
+				<a data-attr="Important Personalities &#xa; And Historical Events" href="./importantpersonalities.html" class="item item5 historical"><img class="b-radius shigerub-radius" src="./images/shigerumiyamoto.jpg" alt="" height="249px" width="249px"></a>
+			</div>
+			<nav class="bdika">
+				<div class="ido flex">
+					<a data-attr="I"><h1>I</h1></a>
+					<a data-attr="D"><h1>d</h1></a>
+					<a data-attr="O"><h1>o</h1></a>
+				</div>
+				<div class="tomer flex">
+				<a data-attr="T"><h1>T</h1></a>
+				<a data-attr="O"><h1>o</h1></a>
+				<a data-attr="M"><h1>m</h1></a>
+				<a data-attr="E"><h1>e</h1></a>
+				<a data-attr="R"><h1>r</h1></a>
+			</div>
+			</nav>
+		</main>
+		<footer class="flex">
+			<div class="mode">
+				<img src="./images/controller.svg" width="70px" height="75px" />
+			</div>
+			<div class="accept flex v-center">
+				<img class="mouse" src="./images/mouse.png" alt="">
+				<span class="clickbackground">CLICK TO ENTER</span>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>

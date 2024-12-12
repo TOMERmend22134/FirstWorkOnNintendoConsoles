@@ -1,0 +1,621 @@
+/*=========== global =============*/
+
+
+	:focus {
+		outline: 0;
+	}
+	
+	*,
+	*:before,
+	*:after {
+		box-sizing: border-box;
+	}
+	
+	.flex {
+		display: flex;
+	}
+	
+	.flex-row {
+		flex-direction: row;
+	}
+	
+	.flex-col {
+		flex-direction: column;
+	}
+	
+	.v-center {
+		align-items: center;
+	}
+	
+	body {
+		--bg: #EBEBEB;
+		background: var(--bg);
+		margin: 0;
+	}
+
+	.index {
+		background-image: url(../images/mario1-1.gif);
+		background-repeat: no-repeat;
+		background-size: cover;
+		overflow-x: hidden;
+		background-position: left;
+	}
+	
+	@font-face {
+		font-family: "nintendo";
+		src: url(/fonts/AOTFShinGoProMedium.woff);
+	}
+	
+	.wrapper {
+		--static: #2D2D2D;
+		--solid: #FFF;
+		--shadow: 0 0 5px rgba(0, 0, 0, .05);
+		position: relative;
+		margin: 0 auto;
+		height: 100vh;
+		width: 100%;
+	}
+	
+	html {
+		font-family: 'nintendo';
+		src: url(/fonts/) format("opentype");
+		color: var(--static);
+		user-select: none;
+	}
+	
+	span {
+		display: inline-block;
+	}
+	
+	span.clickbackground {
+		background: linear-gradient(93.62deg, #ffffff 23.88%, #ffffff 70.45%);
+		border-radius: 8px;
+		font-weight: 600;
+	}
+
+	a {
+		position: relative;
+		--focus-light: #3FE9D3;
+		--focus-dark: #ec0d06;
+	}
+	
+	a:after {
+		display: none;
+		content: attr(data-attr);
+		position: absolute;
+		bottom: -90px;
+		left: 50%;
+		transform: translate(-50%, -42.5px);
+		font-size: 26px;
+		font-weight: 300;
+		white-space: pre;
+		color: var(--focus-dark);
+	}
+	
+	a:hover:after,
+	a:focus:after {
+		display: inline-block;
+	}
+	
+	a:hover,
+	a:focus {
+		animation: focus 1s infinite;
+	}
+	
+	item {
+		position: relative;
+		--focus-light: #3FE9D3;
+		--focus-dark: #04B9C3;
+	}
+	
+	item::after{
+		display: none;
+		content: attr(data-attr);
+		position: absolute;
+		bottom: -80px;
+		left: 50%;
+		transform: translate(-50%, -42.5px);
+		font-size: 26px;
+		font-weight: 300;
+		white-space: pre;
+		color: var(--focus-dark);
+	}
+	
+	item:hover:after,
+	item:focus:after {
+		display: inline-block;
+	}
+	
+	item:hover,
+	item:focus {
+		animation: focus 1s infinite;
+	}
+	
+	
+	@keyframes focus {
+		0% {
+			box-shadow: var(--shadow), 0 0 0 5px var(--focus-light);
+		}
+		50% {
+			box-shadow: var(--shadow), 0 0 0 5px var(--focus-dark);
+		}
+		100% {
+			box-shadow: var(--shadow), 0 0 0 5px var(--focus-light);
+		}
+	}
+	
+	
+	/*=========== header =============*/
+	
+	header {
+		margin: 0;
+		padding: 0 25px;
+		font-size: 28px;
+		font-weight: 600;
+	}
+	
+	header > * {
+		margin: 0;
+	}
+	
+	header > *:first-child,
+	.games .item:first-child {
+		margin-left: 0;
+	}
+	
+	header > *:last-child,
+	.games .item:last-child {
+		margin-right: 0;
+	}
+	
+	a.profile {
+		margin-right: auto;
+		--d: 60px;
+		width: var(--d);
+		height: var(--d);
+		border: 3px solid var(--solid);
+		background: var(--bg);
+		box-shadow: var(--shadow);
+		border-radius: 100%;
+		text-align: center;
+		padding: 5px 0;
+	}
+
+	header.flex.v-center.idotomerheader {
+		gap: 0px;
+	}
+	
+	a.profile:after {
+		font-size: 1em;
+	}
+
+	a.profile.fontfix {
+		top: 5px;
+	}
+
+	a.profile.fontfix.idogap {
+		left: 300px;
+	}
+	
+	.battery span i {
+		font-style: initial;
+		font-size: .6em;
+	}
+
+	a.item::after {
+		font-size: 1.6em;
+	}
+
+	a.item {
+		border-radius: 30px;
+	}
+
+	a.item.item4 {
+		background-image: url(../images/deckbackground.webp);
+		background-size: contain;
+	}
+	
+	a.item.item2 {
+		background-image: url(../images/dsbackground.jpg);
+		background-size: cover;
+	}
+
+	.ido {
+		position: absolute;
+		right: 0px;
+		bottom: 90px;
+	}
+
+	.tomer {
+		position: absolute;
+		left: 353px;
+		bottom: 90px;
+	}
+
+
+	.b-radius {
+				border-radius: 30px;
+	}
+
+	img.b-radius.shigerub-radius {
+		object-fit: contain;
+		background-image: url(../images/mariobackground.jpg);
+		background-size: contain;
+	}
+
+	img.b-radius.steamdeckb-radius {
+		position: absolute;
+		object-fit: contain;
+		top: 10px;
+	}
+
+	img.b-radius.switchb-radius {
+		background-image: url(../images/switchbackground.png);
+		background-size: contain;
+	}
+
+	img.b-radius.dsb-radius {
+		position: absolute;
+		object-fit: contain;
+		right: 10px;
+	}
+
+	img.ds-sizefix.b-radius.dsb-radius.leftds {
+		object-fit: cover;
+		position: absolute;
+		top: 10px;
+	}
+
+	img.b-radius.gameboyb-radius {
+		background-image: url(../images/pokemonbackground.png);
+		background-size: contain;
+	}
+	
+	div.time {
+		margin-top: 1px;
+	}
+
+	div.wifi {
+		margin-top: 5px;
+		margin-inline: 15px;
+	}
+
+	div.battery {
+			margin-top: 10px;
+	}
+
+	div.flex.tight {
+		position: relative;
+		top: 5px;
+		left: 50px;
+	}
+
+	img.item.item5.gameboyfix {
+		object-fit: contain;
+		width: 120px;
+		height: 45px;
+	}
+
+	img.item.item5.nintendodsfix {
+		object-fit: contain;
+		width: 120px;
+		height: 45px;
+	}
+
+	img.item.item5.steamdeckfix {
+		object-fit: contain;
+		width: 120px;
+		height: 45px;
+	}
+
+	img.item.item5.nintendoswitchfix {
+		object-fit: contain;
+		width: 120px;
+		height: 45px;
+	}
+
+	img.profile.shigeru {
+		border-radius: 50%;
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		left: -3px;
+		top: -3px;
+	}
+
+	img.profile {
+		border-radius: 50%;
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		left: -3px;
+		top: -3px;
+	}
+
+	img.item.item5 {
+		border-radius: 30px;
+	}
+
+	a.profile.movescale {
+		left: 90px;
+	}
+
+	
+	a.profile.movescale.idotomer {
+		left: 10px;
+	}
+
+	a.item.item5.fixsizeheight {
+		height: 45px;
+	}
+
+	a.item.item5.fixsizeheight.steamdeckgap {
+		left: -123px;
+	}
+
+	a.item.item5.fixsizeheight.gameboygap {
+		left: 63px;
+	}
+
+	a.item.item5.fixsizeheight.switchgap {
+		left: -40px;
+	}
+
+	a.item.item5.fixsizeheight::after {
+		font-size: 26px;
+	}
+
+	div.consolegap {
+		display: flex;
+		gap: 250px;
+		margin-left: 90px;
+	}
+	
+	/*=========== main =============*/
+	
+	main {
+		position: relative;
+		margin: 0 -20px;
+	}
+	
+	.games {
+		position: relative;
+		margin-bottom: 50px;
+		padding: 85px 95px;
+		/* overflow-x: scroll; */
+		white-space: nowrap;
+		gap: 106px;
+	}
+	
+	/* a.games:after {
+		font-size: .75em;
+	} */
+	
+	.games::-webkit-scrollbar {
+		height: 0px;
+	}
+	
+	.games .item {
+		display: inline-block;
+		margin: 0 7px;
+		--d: 255px;
+		height: var(--d);
+		width: var(--d);
+		flex-shrink: 0;
+		background: var(--bg);
+		border: 3px solid var(--solid);
+		box-shadow: var(--shadow);
+		overflow: visible;
+	}
+	.games .item img {
+		width: 100%;
+	}
+	
+	main nav {
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	
+	main nav a {
+		display: inline-flex;
+		justify-content: center;
+		margin: 0 10px;
+		--d: 85px;
+		height: var(--d);
+		width: var(--d);
+		background: var(--solid);
+		box-shadow: var(--shadow);
+		border-radius: 100%;
+	}
+
+	nav {
+		block-size: 130px;
+	}
+
+	.bdika {
+		position: absolute;
+		top: 650px;
+		left: 700px;
+	}
+
+	div.centering {
+		align-self: center;
+		
+	}
+
+	div.centering2 {
+		align-self: center;
+		
+	}
+
+	div.three-heroes {
+		left: 60px;
+		width: 1193px;
+		height: 286px;
+		gap: 90px;
+	}
+
+	aside iframe {
+		width: 50%;
+		border-radius: 20px;
+		margin-left: -290px;
+	}
+
+	iframe.fixwidthvideo {
+		width: 58%;
+	}
+
+	iframe.fixwidthvideo.fixwidthvideods {
+		width: 64%;
+	}
+
+	h1.switch-h1.modes {
+		margin-left: 150px;
+		font-size: 60px;
+	}
+
+	h1.switch-h1.modes.dsgames {
+		margin-left: 330px;
+	}
+
+	div.paragraphfix {
+		margin-right: 50px;
+	}
+
+	div.imagesizefix {
+		height: auto;
+	}
+
+	p.switch-paragraph.dock {
+		margin-left: 0px;
+		position: relative;
+		margin-top: -140px;
+	}
+
+	p.switch-paragraph.dock.top2ds {
+		margin-top: -163px;
+	}
+
+	p.switch-paragraph.describe.unique {
+		margin-left: -65px;
+	}
+
+	p.switch-paragraph.dock.gameboybottom {
+		bottom: 20px;
+	}
+
+	p.switch-paragraph.describe.unique.gameboy-p-height {
+		margin-left: 158px;
+	}
+
+	p.switch-paragraph.describe.unique.gameboy-p-height.most-selling-games {
+		margin-left: 240px;
+	}
+
+
+	
+	
+	
+	
+	/*=========== footer =============*/
+	
+	footer {
+		position: relative;
+		margin-top: auto;
+		padding: 20px 25px 0;
+		font-size: 24px;
+		width: 100%;
+	}
+	.mode {
+		margin-right: auto;
+		display: inline-flex;
+		justify-content: center;
+		--d: 75px;
+		height: var(--d);
+		width: var(--d);
+		background: var(--solid);
+		box-shadow: var(--shadow);
+		border-radius: 100%;
+	}
+	
+	.accept .btn {
+		--d: 25px;
+		margin-right: 12px;
+		display: inline-block;
+		width: var(--d);
+		height: var(--d);
+		background: var(--static);
+		border-radius: 100%;
+		font-size: .75em;
+		text-align: center;
+		color: var(--bg);
+	}
+
+	.mouse {
+		position: absolute;
+		height: 40px;
+		right: 246px;
+		top: 40px;
+	}
+
+	div.flex.tight.spacing-footer {
+		gap: 80px;
+		left: -33px;
+	}
+
+	a.logofix.heightfixfooter {
+		height: 45px;
+		margin-top: 7px;
+		border-radius: 30px;
+	}
+
+	a.logofix.heightfixfooter.steamsize {
+		height: 60px;
+		bottom: 5px;
+	}
+	a.logofix.heightfixfooter.steamsize::after {
+		top: 92px;
+	}
+
+	div.copyright {
+		font-weight: 600;
+		background: linear-gradient(93.62deg, #E60012 23.88%, #CA0514 70.45%);
+		border-radius: 20px;
+		width: 900px;
+		text-align: center;
+		color: #FFFFFF;
+		position: absolute;
+		right: 465px;
+	}
+
+	div.contactus {
+		font-weight: 600;
+		background: linear-gradient(92.8deg, #418EE9 5.88%, #246EC6 76.24%);	
+		border-radius: 20px;
+		width: 400px;
+		text-align: center;
+		color: #FFFFFF;
+		position: absolute;
+		right: 25px;
+	}
+
+	a.hrefcolorfix {
+		font-weight: 600;
+		background: linear-gradient(92.8deg, #418EE9 5.88%, #246EC6 76.24%);	
+		border-radius: 20px;
+		width: 400px;
+		text-align: center;
+		color: #FFFFFF;
+		position: absolute;
+		right: -1px;
+		top: -47px;
+		text-decoration: none;
+	}
+
+	a.hrefcolorfix::after {
+		bottom: -85px;
+	}
+	
+	#time {
+		font-size: 25px;
+	}
